@@ -34,17 +34,14 @@ void espacio(char *line, char **token)
 int ejecutar(char **token, char *var2)
 {
 	pid_t pid;
-	int ejemplo;
 
 	pid = fork();
 	if (pid == 0)
 	{
-	ejemplo = execvp(token[0], token,);
-	if (ejemplo)
-	{
-	printf("Error");
-	exit(1);
-	}
+		if (execve(token[0], token, NULL) == -1)
+		{
+			perror("ERROR");
+			}
 	free(var2);
 	exit(0);
 	}

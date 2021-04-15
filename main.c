@@ -23,7 +23,6 @@ int main(void)
 	espacio(var2, token);
 	ejecutar(token);
 	}
-	/*if (stats == EOF)
-		exit(2);*/
+	
 	return (0);
 }

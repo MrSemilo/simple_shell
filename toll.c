@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 
-int __execvp(char *name, char *argv[])
+int _execvp(char *name, char *argv[])
 {
 	char *path = pEnv("PATH");
 	char fullName[MAX_NAME_SIZE + 1];

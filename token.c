@@ -39,7 +39,7 @@ int ejecutar(char **token, char *var2)
 	pid = fork();
 	if (pid == 0)
 	{
-	ejemplo = execvp(token[0], token,null);
+	ejemplo = execvp(token[0], token,);
 	if (ejemplo)
 	{
 	printf("Error");

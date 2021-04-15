@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * espacio - Funcion espacio.
- * @line: var.
- * @token: var.
- * Return: 0.
- */
+* espacio - Funcion espacio.
+* @line: var.
+* @token: var.
+* Return: 0.
+*/
 void espacio(char *line, char **token)
 {
 	int conta = 0;
@@ -33,14 +33,17 @@ void espacio(char *line, char **token)
 int ejecutar(char **token, char *var2)
 {
 	pid_t pid;
+	int ejemplo;
 
 	pid = fork();
 	if (pid == 0)
 	{
-		if (execve(token[0], token, NULL) == -1)
-		{
-			perror("ERROR");
-		}
+	ejemplo = _execvp(token[0], token);
+	if (ejemplo)
+	{
+	printf("Error");
+	exit(1);
+	}
 	free(var2);
 	exit(0);
 	}

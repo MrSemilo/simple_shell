@@ -13,6 +13,7 @@ int main(void)
 
 	while (1)
 	{
+		signal(SIGINT, libre);
 		if (isatty(STDIN_FILENO))
 		{
 			write(STDOUT_FILENO, "$ ", 2);

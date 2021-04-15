@@ -14,6 +14,7 @@ int main(void);
 void espacio(char *line, char **token);
 int ejecutar(char **token, char *var2);
 int line_validator(char *tok[]);
+void libre(int sigint);
 
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);

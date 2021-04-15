@@ -118,6 +118,7 @@ int _execvp(char *name, char *argv[])
 	}
 	return (-1);
 }
+
 char *pEnv(char *name)
 {
 	char **envPtr;
@@ -137,12 +138,13 @@ char *pEnv(char *name)
 	}
 	return (NULL);
 }
+
 void execArgs(char *file, char *argv[])
 {
 	int i = 0;
 	char *newArgv[MAX_ARGS + 1];
 
-	execve(file, argv, environ);
+	_execve(file, argv, environ);
 
 	if (errno == ENOEXEC)
 	{
@@ -160,7 +162,7 @@ void execArgs(char *file, char *argv[])
 			newArgv[i + 1] = argv[i];
 		}
 		newArgv[i + 1] = NULL;
-		execve("/bin/sh", newArgv, environ);
+		_execve("/bin/sh", newArgv, environ);
 	}
 }
 /**

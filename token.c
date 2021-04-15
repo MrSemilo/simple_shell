@@ -44,7 +44,7 @@ int ejecutar(char **token, char *var2)
 		perror("Error opening the file");
 			exit(EXIT_FAILURE)
         	
-			}
+		}
 	free(var2);
 	exit(0);
 	}

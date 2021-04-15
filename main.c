@@ -23,6 +23,5 @@ int main(void)
 	espacio(var2, token);
 	ejecutar(token);
 	}
-	
 	return (0);
 }

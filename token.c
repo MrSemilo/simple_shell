@@ -40,7 +40,9 @@ int ejecutar(char **token, char *var2)
 	{
 		if (execve(token[0], token, NULL) == -1)
 		{
-			perror("ERROR");
+			//3
+		perror("Error opening the file");
+        	printf("errno = %d\n", errno);
 			}
 	free(var2);
 	exit(0);

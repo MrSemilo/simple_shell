@@ -1,0 +1,20 @@
+." Manpage.
+." To correct errors or typos.
+.TH man 3 "8 Abril 2021" "Holberton School 0x16. C - Simple Shell"
+
+.SH NAME
+Simple Shell.
+
+.SH SYNOPSIS
+Simple Shell - interprete de comandos.
+
+.SH DESCRIPTION
+Shell is a shell (interface). In other words, an intermediary responsible for
+translating user commands into instructions that only the operating system kernel
+can understand.
+
+.SH
+
+
+.B Author
+Adrian Guerra and Camilo Valencia

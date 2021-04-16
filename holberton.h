@@ -2,8 +2,6 @@
 #define _HOLBERTON_H_
 
 #define SIZE 1024
-#define MAX_NAME_SIZE 1000
-#define MAX_ARGS 1000
 
 #include <stdio.h>
 #include <string.h>

@@ -11,8 +11,11 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <errno.h>
 
 #define SEPARATORS " ,!¡¿?\'\"\n\t"
+#define MAX_NAME_SIZE 1000
+#define MAX_ARGS 1000
 
 int main(void);
 void espacio(char *line, char **token);
@@ -28,5 +31,7 @@ int _execvp(char *name, char *argv[]);
 char *_strchr(char *s, char c);
 char *pEnv(char *name);
 void execArgs(char *file, char *argv[]);
+char *_strncpy(char *dest, char *src, int n);
+extern char **environ;
 
 #endif

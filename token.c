@@ -27,21 +27,21 @@ void espacio(char *line, char **token)
  *ejecutar - check  if the command recived is true.
  *
  *@token: recives the value of  the funcion token.
- *
+ *@var2: recives the value of  the funcion token.
  *Return: return (1).
  */
 int ejecutar(char **token, char *var2)
 {
 	pid_t pid;
-	int ejemplo;
+	int status;
 
 	pid = fork();
 	if (pid == 0)
 	{
-	ejemplo = _execvp(token[0], token);
-	if (ejemplo)
+	status = _execvp(token[0], token);
+	if (status)
 	{
-	printf("Error");
+	perror("error");
 	exit(1);
 	}
 	free(var2);

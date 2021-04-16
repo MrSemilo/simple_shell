@@ -12,7 +12,7 @@
 
 int main(void);
 void espacio(char *line, char **token);
-int ejecutar(char **token);
+int ejecutar(char **token, char *var2);
 int line_validator(char *tok[]);
 
 int _strlen(char *s);

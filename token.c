@@ -30,7 +30,7 @@ void espacio(char *line, char **token)
  *
  *Return: return (1).
  */
-int ejecutar(char **token)
+int ejecutar(char **token, char *var2)
 {
 	pid_t pid;
 
@@ -42,6 +42,8 @@ int ejecutar(char **token)
 			perror("ERROR");
 			return (0);
 		}
+	free(var2);
+	exit(0);
 	}
 	else if (pid < 0)
 	{

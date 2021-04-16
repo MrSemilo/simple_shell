@@ -34,30 +34,17 @@ void espacio(char *line, char **token)
 int ejecutar(char **token, char *var2)
 {
 	pid_t pid;
-<<<<<<< HEAD
 	int status;
-=======
->>>>>>> 95dc900e9ae9f915c879a3a6da24c045e771faff
 
 	pid = fork();
 	if (pid == 0)
 	{
-<<<<<<< HEAD
 	status = _execvp(token[0], token);
 	if (status)
 	{
 	perror("error");
 	exit(1);
 	}
-=======
-		if (execve(token[0], token, NULL) == -1)
-		{
-			
-		perror("Error opening the file");
-			exit(EXIT_FAILURE);
-        	
-		}
->>>>>>> 95dc900e9ae9f915c879a3a6da24c045e771faff
 	free(var2);
 	exit(0);
 	}

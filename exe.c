@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _execvp - function called 
+ * _execvp - function called
  * @name: char pointer
  * @argv: arg vector
  * ENOEXEC - exec format error
@@ -51,12 +51,11 @@ int _execvp(char *name, char *argv[])
 
 /**
  * execArgs - function called by
- *
  * @file: char pointer
  * @argv: arg vector
- * 
+ *
  * ENOEXEC - exec format error
- * 
+ *
  * Return: void
  */
 void execArgs(char *file, char *argv[])

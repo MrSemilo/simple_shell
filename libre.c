@@ -1,5 +1,8 @@
 #include "holberton.h"
-
+/**
+* libre - funtion
+* @sigint: int
+*/
 void libre(int sigint)
 {
 	if (sigint == SIGINT)

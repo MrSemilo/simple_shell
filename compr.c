@@ -17,7 +17,7 @@ int compr_avanz(char *tok[], char *var2)
 	}
 	else if (_strcmp("exit", tok[0]) == 0)
 	{
-		 exit(2);
+		exit(2);
 	}
 	else if (_strcmp("env", tok[0]) == 0)
 	{

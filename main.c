@@ -28,7 +28,6 @@ int main(void)
 		}
 	espacio(var2, token);
 	compr_avanz(token, var2);
-	
 	}
 	free(var2);
 	return (0);

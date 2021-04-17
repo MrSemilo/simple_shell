@@ -28,7 +28,7 @@ char *_strchr(char *s, char c);
 char *pEnv(char *name);
 void execArgs(char *file, char *argv[]);
 char *_strncpy(char *dest, char *src, int n);
-int compr_avanz(char **tokens);
+int compr_avanz(char **tokens, char *var2);
 void _env(char *tok[]);
 int _cd(char *tok[]);
 void errors(char __attribute__((unused)) **error);

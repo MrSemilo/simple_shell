@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *_env - tenvironment variable
+ *@_env - tenvironment variable
  *
- *@commands: recives the value of  the funcion token.
+ *@tok: recives the value of  the funcion token.
  *
  */
 

@@ -17,15 +17,17 @@ int compr_avanz(char *tok[])
 	}
 	if (_strcmp("exit", tok[0]) == 0)
 	{
-		return (0);
+		 exit(2);
 	}
 	if (_strcmp("env", tok[0]) == 0)
 	{
-		return (3);
+		_env(tok);
 	}
 	if (_strcmp("cd", tok[0]) == 0)
 	{
-		return (4);
+		_cd(tok);
 	}
+	else
+		execute(tok, line);
 	return (1);
 }

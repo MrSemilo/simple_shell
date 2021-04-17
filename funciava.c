@@ -7,14 +7,14 @@
  *
  */
 
-void _env(char *tok[])
+int _env(char *tok[])
 {
 	int i;
 	char *s;
 
 	if (tok[1] != NULL)
 	{
-		return;
+		return(-1);
 	}
 	else
 	{
@@ -25,6 +25,7 @@ void _env(char *tok[])
 			write(STDOUT_FILENO, "\n", 1);
 		}
 	}
+	return(0);
 }
 
 /**

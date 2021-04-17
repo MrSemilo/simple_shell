@@ -24,6 +24,7 @@ int _env(char *tok[])
 			write(STDOUT_FILENO, s, _strlen(s));
 			write(STDOUT_FILENO, "\n", 1);
 		}
+			return(0);
 	}
 	return(0);
 }

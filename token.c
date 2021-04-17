@@ -39,7 +39,7 @@ int ejecutar(char **token, char *var2)
 	pid = fork();
 	if (pid == 0)
 	{
-	status = _execvp(var2, token);
+	status = _execvp(token[0], token);
 	if (status)
 	{
 	perror("error");

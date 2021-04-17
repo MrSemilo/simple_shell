@@ -28,6 +28,6 @@ int compr_avanz(char *tok[], char *var2)
 		_cd(tok);
 	}
 	else
-		ejecutar(token, var2);
+		ejecutar(tok, var2);
 	return (1);
 }

@@ -8,7 +8,7 @@
  *
  */
 
-int compr_avanz(char *tok[], var2)
+int compr_avanz(char *tok[], char *var2)
 {
 
 	if (tok[0] == NULL)

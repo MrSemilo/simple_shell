@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- *line_validator - validates if the function receives an exit, env or cd
- *
+ * compr_avanz - validates if the function receives an exit, env or cd
+ *@ var2: var2
  *@tok: recives the value of  the funcion token.
  *
  *Return: return(0)  if the line validator is  exit, env or cd. else return (1)

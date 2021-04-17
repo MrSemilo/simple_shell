@@ -1,9 +1,8 @@
 #include "holberton.h"
 
 /**
- *@_env - tenvironment variable
- *
- *@tok: recives the value of  the funcion token.
+ *_env - tenvironment variable
+ *@*tok: recives the value of  the funcion token.
  *
  */
 
@@ -14,7 +13,7 @@ int _env(char *tok[])
 
 	if (tok[1] != NULL)
 	{
-		return (-1); 
+	return (-1); 
 	}
 	else
 	{
@@ -33,7 +32,6 @@ int _env(char *tok[])
  *_cd - functions.
  *
  *@args: recives the value of  the funcion token.
- *
  *Return: return(2);
  */
 

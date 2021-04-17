@@ -15,15 +15,15 @@ int compr_avanz(char *tok[], char *var2)
 	{
 		return (2);
 	}
-	if (_strcmp("exit", tok[0]) == 0)
+	else if (_strcmp("exit", tok[0]) == 0)
 	{
 		 exit(2);
 	}
-	if (_strcmp("env", tok[0]) == 0)
+	else if (_strcmp("env", tok[0]) == 0)
 	{
 		_env(tok);
 	}
-	if (_strcmp("cd", tok[0]) == 0)
+	else if (_strcmp("cd", tok[0]) == 0)
 	{
 		_cd(tok);
 	}

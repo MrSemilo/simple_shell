@@ -31,6 +31,7 @@ char *_strncpy(char *dest, char *src, int n);
 int compr_avanz(char **tokens);
 void _env(char *tok[]);
 int _cd(char *tok[]);
+void errors(char __attribute__((unused)) **error);
 extern char **environ;
 
 #endif

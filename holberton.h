@@ -29,7 +29,7 @@ char *pEnv(char *name);
 void execArgs(char *file, char *argv[]);
 char *_strncpy(char *dest, char *src, int n);
 int compr_avanz(char **tok, char *var2);
-void _env(char *tok[]);
+int _env(char *tok[]);
 int _cd(char *tok[]);
 void errors(char __attribute__((unused)) **error);
 extern char **environ;
